@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PickerViewCell" id="5lq-Ig-M4u" customClass="PickerViewCell" customModule="Mudpie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="182.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5lq-Ig-M4u" id="Kkm-5u-KCn">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wUB-Rc-Lof">
+                        <rect key="frame" x="10" y="10" width="300" height="185.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KjE-zB-VFb">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="23.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rv-Fc-6P5">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="wzQ-5W-sW3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZc-UU-AqV">
+                                        <rect key="frame" x="130" y="0.0" width="170" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWm-Rw-j5C">
+                                <rect key="frame" x="0.0" y="23.5" width="300" height="162"/>
+                            </pickerView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wUB-Rc-Lof" firstAttribute="leading" secondItem="Kkm-5u-KCn" secondAttribute="leading" constant="10" id="GtI-Xn-Nar"/>
+                    <constraint firstAttribute="trailing" secondItem="wUB-Rc-Lof" secondAttribute="trailing" constant="10" id="QuH-7S-x3x"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wUB-Rc-Lof" secondAttribute="bottom" priority="250" constant="10" id="rZe-L3-2O1"/>
+                    <constraint firstItem="wUB-Rc-Lof" firstAttribute="top" secondItem="Kkm-5u-KCn" secondAttribute="top" constant="10" id="sBm-gq-3NY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="Ho1-PF-OeA"/>
+            <connections>
+                <outlet property="labelDetail" destination="MZc-UU-AqV" id="sLe-C4-PHG"/>
+                <outlet property="labelTitle" destination="3Rv-Fc-6P5" id="Hge-8m-bEt"/>
+                <outlet property="pickerView" destination="TWm-Rw-j5C" id="xQr-N2-oBw"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
